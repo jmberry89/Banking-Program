@@ -26,12 +26,18 @@ public class SavingsAccount implements Account {
     }
 
     @Override
-    public void Withdraw(float amount) {
+    public void withdraw(float amount) {
+        if(this.accountBalance - amount >=  0){
+            this.accountBalance -= amount;
+        }
+        else{
+            System.out.println("Error: Insufficient funds.");
+        }
 
     }
 
     @Override
-    public void Deposit(float amount) {
-
+    public void deposit(float amount) {
+        this.accountBalance += amount;
     }
 }

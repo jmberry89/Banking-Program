@@ -4,6 +4,6 @@ public interface Account {
   float getBalance();
   int getAccountNumber();
   String getAccountType();
-  void Withdraw(float amount);
-  void Deposit(float amount);
+  void withdraw(float amount);
+  void deposit(float amount);
 }
