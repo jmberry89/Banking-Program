@@ -1,4 +1,4 @@
-package User;
+package user;
 
 public interface UserManagement {
     void addUser(User user);

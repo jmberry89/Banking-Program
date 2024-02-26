@@ -1,4 +1,4 @@
-package User;
+package user;
 
 public class BankCustomer implements User {
     private String username = null;

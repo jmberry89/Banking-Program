@@ -1,14 +1,15 @@
-package Account;
+package account;
 
-public class CheckingAccount implements Account{
+public class SavingsAccount implements Account {
     private float accountBalance = 0;
     private int accountNum = 0;
-    private final String accountType = "Checking";
+    private final String accountType = "Savings";
 
-    public CheckingAccount(int accountNum, float accountBalance){
+    public SavingsAccount(int accountNum, float accountBalance){
         this.accountNum = accountNum;
         this.accountBalance = accountBalance;
     }
+
     @Override
     public float getBalance() {
         return this.accountBalance;
@@ -21,7 +22,7 @@ public class CheckingAccount implements Account{
 
     @Override
     public String getAccountType() {
-        return this.accountType;
+        return accountType;
     }
 
     @Override

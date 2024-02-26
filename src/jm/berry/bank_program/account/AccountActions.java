@@ -1,7 +1,7 @@
-package Account;
+package account;
 
 public class AccountActions {
-    public void fundTransfer(Account Withdraw, Account Deposit){
+    public void fundTransfer(Account withdraw, Account deposit){
 
     }
 
